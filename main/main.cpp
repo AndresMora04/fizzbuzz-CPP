@@ -12,6 +12,8 @@ int main()
     FizzBuzzResolver fizzBuzzResolver;
 
     fizzBuzzResolver.applyFizzBuzzLogic();
+    cout << endl;
+    fizzBuzzResolver.applyFizzBuzzPingPongLogic();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

@@ -42,5 +42,19 @@ void FizzBuzzResolver::applyFizzBuzzLogic()
 	cout << endl;
 }
 
+void FizzBuzzResolver::applyFizzBuzzPingPongLogic()
+{
+	for (int i = 0; i < ARRAY_SIZE; ++i) {
+		int currentNumber = first100NumberList[i];
+		string result = "";
+
+		result += (isDivisibleByThree(currentNumber) ? "Fizz" : "");
+		result += (isDivisibleByFive(currentNumber) ? "Buzz" : "");
+		result += (isExactlyDivisible(currentNumber, 2) ? "Ping" : "");
+		result += (isExactlyDivisible(currentNumber, 7) ? "Pong" : "");
+
+		cout << (result.empty() ? to_string(currentNumber) : result) << " ";
+	}
+}
 
 
