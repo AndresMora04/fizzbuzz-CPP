@@ -4,9 +4,12 @@
 #include <iostream>
 #include "FizzBuzzResolver.h"
 
+using namespace std;
 int main()
 {
-    std::cout << "Hello World!\n";
+    FizzBuzzResolver fizzBuzzResolver;
+
+    fizzBuzzResolver.showArray();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
