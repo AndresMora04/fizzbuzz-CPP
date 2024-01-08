@@ -2,6 +2,7 @@
 //
 
 #include <iostream>
+#include "FizzBuzzResolver.h"
 
 int main()
 {
