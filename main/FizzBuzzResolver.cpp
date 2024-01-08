@@ -7,6 +7,11 @@ void FizzBuzzResolver::initArray()
 	}
 }
 
+bool FizzBuzzResolver::isDivisibleByFive(int number)
+{
+	return (number % 5 == 0);
+}
+
 void FizzBuzzResolver::showArray() 
 {
 	initArray();
@@ -21,13 +26,26 @@ bool FizzBuzzResolver::isDivisibleByThree(int number)
 	return (number % 3 == 0);
 }
 
-void FizzBuzzResolver::replaceDivisibleBy3WithFizz()
+void FizzBuzzResolver::replaceDivisibleByThreeWithFizz()
 {
 	initArray();
 
-	for (int i = 0; i < 100; ++i) {
+	for (int i = 0; i < 100; i++) {
 		if (isDivisibleByThree(first100NumberList[i])) {
 			cout << "Fizz ";
+		}
+		else {
+			cout << first100NumberList[i] << " ";
+		}
+	}
+	cout << endl;
+}
+
+void FizzBuzzResolver::replaceDivisibleByFiveWithBuzz()
+{
+	for (int i = 0; i < 100; i++) {
+		if (isDivisibleByFive(first100NumberList[i])) {
+			cout << "Buzz ";
 		}
 		else {
 			cout << first100NumberList[i] << " ";

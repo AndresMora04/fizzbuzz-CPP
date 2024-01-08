@@ -8,9 +8,11 @@ class FizzBuzzResolver
 private:
 	int first100NumberList[ARRAY_SIZE];
 	void initArray();
+	bool isDivisibleByFive(int number);
 public:
 	void showArray();
 	bool isDivisibleByThree(int number);
-	void replaceDivisibleBy3WithFizz();
+	void replaceDivisibleByThreeWithFizz();
+	void replaceDivisibleByFiveWithBuzz();
 };
 

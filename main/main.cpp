@@ -15,7 +15,11 @@ int main()
 
     cout << endl << endl;
     cout << "Arreglo con los divisibles entre 3:" << endl << endl;
-    fizzBuzzResolver.replaceDivisibleBy3WithFizz();
+    fizzBuzzResolver.replaceDivisibleByThreeWithFizz();
+
+    cout << endl << endl;
+    cout << "Arreglo con los divisibles entre 5:" << endl << endl;
+    fizzBuzzResolver.replaceDivisibleByFiveWithBuzz();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
