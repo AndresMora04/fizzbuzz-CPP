@@ -11,17 +11,7 @@ int main()
 
     FizzBuzzResolver fizzBuzzResolver;
 
-    fizzBuzzResolver.showArray();
-
-    cout << endl << endl;
-    cout << "Arreglo con los divisibles entre 3:" << endl << endl;
-    fizzBuzzResolver.replaceDivisibleByThreeWithFizz();
-
-    cout << endl << endl;
-    cout << "Arreglo con los divisibles entre 5:" << endl << endl;
-    fizzBuzzResolver.replaceDivisibleByFiveWithBuzz();
-
-    fizzBuzzResolver.replaceDependDivisor();
+    fizzBuzzResolver.applyFizzBuzzLogic();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

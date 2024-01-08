@@ -10,11 +10,8 @@ private:
 	void initArray();
 	bool isDivisibleByFive(int number);
 public:
-	void showArray();
 	bool isDivisibleByThree(int number);
-	void replaceDivisibleByThreeWithFizz();
-	void replaceDivisibleByFiveWithBuzz();
 	bool isExactlyDivisible(int number, int divisor);
-	void replaceDependDivisor();
+	void applyFizzBuzzLogic();
 };
 
