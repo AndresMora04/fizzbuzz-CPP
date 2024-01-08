@@ -7,11 +7,33 @@ void FizzBuzzResolver::initArray()
 	}
 }
 
-void FizzBuzzResolver::showArray() {
+void FizzBuzzResolver::showArray() 
+{
 	initArray();
+
 	for (int i = 0; i < ARRAY_SIZE; i++) {
 		cout << first100NumberList[i] << ", ";
 	}
+}
+
+bool FizzBuzzResolver::isDivisibleByThree(int number)
+{
+	return (number % 3 == 0);
+}
+
+void FizzBuzzResolver::replaceDivisibleBy3WithFizz()
+{
+	initArray();
+
+	for (int i = 0; i < 100; ++i) {
+		if (isDivisibleByThree(first100NumberList[i])) {
+			cout << "Fizz ";
+		}
+		else {
+			cout << first100NumberList[i] << " ";
+		}
+	}
+	cout << endl;
 }
 
 

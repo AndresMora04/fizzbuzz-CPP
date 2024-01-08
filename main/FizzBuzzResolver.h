@@ -10,5 +10,7 @@ private:
 	void initArray();
 public:
 	void showArray();
+	bool isDivisibleByThree(int number);
+	void replaceDivisibleBy3WithFizz();
 };
 

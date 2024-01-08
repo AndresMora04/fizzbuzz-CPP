@@ -7,9 +7,15 @@
 using namespace std;
 int main()
 {
+    //int array[100];
+
     FizzBuzzResolver fizzBuzzResolver;
 
     fizzBuzzResolver.showArray();
+
+    cout << endl << endl;
+    cout << "Arreglo con los divisibles entre 3:" << endl << endl;
+    fizzBuzzResolver.replaceDivisibleBy3WithFizz();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
