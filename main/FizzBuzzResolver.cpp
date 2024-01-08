@@ -54,4 +54,24 @@ void FizzBuzzResolver::replaceDivisibleByFiveWithBuzz()
 	cout << endl;
 }
 
+bool FizzBuzzResolver::isExactlyDivisible(int number, int divisor)
+{
+	return (number % divisor == 0);
+}
+
+void FizzBuzzResolver::replaceDependDivisor()
+{
+	for (int i = 0; i < 100; i++) {
+		if (isExactlyDivisible(first100NumberList[i], 7)) {
+			cout << "Seven ";
+		}
+		else {
+			cout << first100NumberList[i] << " ";
+		}
+	}
+	cout << endl;
+}
+
+
+
 

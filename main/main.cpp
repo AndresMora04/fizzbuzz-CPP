@@ -20,6 +20,8 @@ int main()
     cout << endl << endl;
     cout << "Arreglo con los divisibles entre 5:" << endl << endl;
     fizzBuzzResolver.replaceDivisibleByFiveWithBuzz();
+
+    fizzBuzzResolver.replaceDependDivisor();
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar

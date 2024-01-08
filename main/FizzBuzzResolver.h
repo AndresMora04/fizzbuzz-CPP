@@ -14,5 +14,7 @@ public:
 	bool isDivisibleByThree(int number);
 	void replaceDivisibleByThreeWithFizz();
 	void replaceDivisibleByFiveWithBuzz();
+	bool isExactlyDivisible(int number, int divisor);
+	void replaceDependDivisor();
 };
 
