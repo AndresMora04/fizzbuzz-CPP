@@ -3,7 +3,7 @@
 void FizzBuzzResolver::initArray()
 {
 	for (int i = 1; i <= ARRAY_SIZE; i++) {
-		first100NumberList[i - 1] = i;
+		first100NumberList[i - 1] = i;// NOTE: Is a strange solution, becareful
 	}
 }
 
@@ -41,7 +41,7 @@ void FizzBuzzResolver::applyFizzBuzzLogic()
 	}
 	cout << endl;
 }
-
+//NOTE:Reuse the previous logic
 void FizzBuzzResolver::applyFizzBuzzPingPongLogic()
 {
 	for (int i = 0; i < ARRAY_SIZE; ++i) {
